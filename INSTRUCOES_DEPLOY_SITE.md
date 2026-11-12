@@ -32,3 +32,4 @@ Caso o GitHub não inicie o build automaticamente, siga estes passos simples:
 - **Cards dos 7 Artigos:** Título, resumo, DOIs do CERN/Zenodo, links para o código no GitHub e PDFs para leitura imediata no navegador.
 - **Protocolo de 5 Portões de Integridade:** Explicação visual do método anti-alucinação.
 - **Canais de Contato:** E-mail direto, ORCID, GitHub e perfil no Academia.edu.
+
