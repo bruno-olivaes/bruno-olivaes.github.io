@@ -1041,3 +1041,283 @@ body {
     font-size: 2.8rem;
   }
 }
+
+
+/* ==========================================================================
+   EXTENSÕES: PLANO EMBAIXADOR, PATROCÍNIO, SUPREME MATH & TRANSPARÊNCIA
+   ========================================================================== */
+
+/* GRID DUAL DE OFERTAS (R$ 14,90 vs R$ 97,00) */
+.pricing-dual-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  margin-top: 2.5rem;
+}
+
+.pricing-card {
+  background: var(--bg-card);
+  border: 1px solid var(--gold-border);
+  border-radius: var(--radius-lg);
+  padding: 3rem 2.2rem;
+  position: relative;
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.pricing-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--gold);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.8), 0 0 30px var(--gold-glow);
+}
+
+.pricing-card.featured {
+  border: 2px solid var(--emerald-light);
+  background: linear-gradient(180deg, rgba(16, 185, 129, 0.08) 0%, var(--bg-card) 100%);
+  box-shadow: 0 16px 36px rgba(16, 185, 129, 0.2);
+}
+
+.pricing-card.featured:hover {
+  border-color: #34d399;
+  box-shadow: 0 20px 45px rgba(16, 185, 129, 0.35);
+}
+
+.pricing-badge-top {
+  position: absolute;
+  top: -14px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(135deg, #059669 0%, #10b981 100%);
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 0.35rem 1.25rem;
+  border-radius: var(--radius-pill);
+  box-shadow: var(--shadow-cta);
+  white-space: nowrap;
+}
+
+.math-split-box {
+  background: rgba(0, 0, 0, 0.5);
+  border: 1px dashed var(--emerald-border);
+  border-radius: var(--radius-md);
+  padding: 1.25rem;
+  margin: 1.5rem 0;
+  text-align: left;
+}
+
+.math-split-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.88rem;
+  padding: 0.4rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.math-split-item:last-child {
+  border-bottom: none;
+}
+
+.math-split-item .label {
+  color: var(--text-muted);
+}
+
+.math-split-item .val {
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.math-split-item .val.emerald {
+  color: var(--emerald-light);
+}
+
+.math-split-item .val.gold {
+  color: var(--gold-light);
+}
+
+/* WIDGET MATEMÁTICA SUPREMA */
+.supreme-math-widget {
+  background: linear-gradient(135deg, rgba(14, 19, 30, 0.95) 0%, rgba(9, 13, 20, 0.95) 100%);
+  border: 2px solid var(--gold);
+  border-radius: var(--radius-lg);
+  padding: 2.75rem 2.25rem;
+  margin: 3rem 0;
+  position: relative;
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.85), inset 0 0 30px rgba(212, 175, 55, 0.08);
+}
+
+.math-header {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  margin-bottom: 1.75rem;
+  border-bottom: 1px solid rgba(212, 175, 55, 0.2);
+  padding-bottom: 1.25rem;
+}
+
+.math-number-circle {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #d4af37 0%, #aa841f 100%);
+  color: #07090e;
+  font-family: var(--font-heading);
+  font-size: 2.2rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 25px rgba(212, 175, 55, 0.5);
+  flex-shrink: 0;
+}
+
+.math-title-group h3 {
+  font-family: var(--font-heading);
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin-bottom: 0.25rem;
+}
+
+.math-title-group span {
+  font-size: 0.82rem;
+  color: var(--gold-light);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-weight: 700;
+}
+
+/* CARDS DE EMPREENDEDORISMO HIP-HOP */
+.hiphop-cases-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.75rem;
+  margin-top: 2.5rem;
+}
+
+.hiphop-case-card {
+  background: var(--bg-card);
+  border: 1px solid var(--gold-border);
+  border-radius: var(--radius-md);
+  padding: 1.85rem;
+  transition: var(--transition);
+}
+
+.hiphop-case-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--gold);
+}
+
+.hiphop-case-card .tag {
+  font-size: 0.72rem;
+  font-weight: 800;
+  color: var(--gold-light);
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.hiphop-case-card h4 {
+  font-family: var(--font-heading);
+  font-size: 1.15rem;
+  color: #ffffff;
+  margin-bottom: 0.75rem;
+}
+
+.hiphop-case-card p {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 0.75rem;
+}
+
+.hiphop-case-card .takeaway {
+  background: rgba(212, 175, 55, 0.08);
+  border-left: 3px solid var(--gold);
+  padding: 0.65rem 0.85rem;
+  font-size: 0.82rem;
+  color: var(--text-main);
+  border-radius: 0 6px 6px 0;
+}
+
+/* SEÇÃO DE PATROCÍNIO EMPRESARIAL & LOGOS NO JORNAL */
+.sponsor-banner {
+  background: linear-gradient(135deg, rgba(16, 185, 129, 0.12) 0%, rgba(14, 19, 30, 0.9) 100%);
+  border: 2px solid var(--emerald-border);
+  border-radius: var(--radius-lg);
+  padding: 3rem 2.5rem;
+  margin: 3.5rem 0;
+  text-align: center;
+}
+
+.sponsor-mock-frame {
+  background: rgba(0, 0, 0, 0.5);
+  border: 2px dashed rgba(212, 175, 55, 0.35);
+  border-radius: var(--radius-md);
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 520px;
+}
+
+.sponsor-mock-frame p {
+  color: var(--gold-light);
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.sponsor-mock-frame span {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
+/* APOIO SOCIAL GRATUITO (COMPARTILHAMENTO) */
+.free-support-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: var(--radius-lg);
+  padding: 2.5rem;
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.free-support-card h3 {
+  font-family: var(--font-heading);
+  font-size: 1.6rem;
+  color: #ffffff;
+  margin-bottom: 0.85rem;
+}
+
+.free-support-card p {
+  color: var(--text-muted);
+  font-size: 1rem;
+  max-width: 780px;
+  margin: 0 auto 1.5rem auto;
+  line-height: 1.7;
+}
+
+.free-actions-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.free-action-pill {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+  padding: 0.65rem 1.25rem;
+  border-radius: var(--radius-pill);
+  font-size: 0.88rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
