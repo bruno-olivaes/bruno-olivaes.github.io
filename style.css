@@ -249,6 +249,46 @@ header {
   overflow: hidden;
 }
 
+.master-card-grid {
+  display: flex;
+  gap: 36px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.master-card-text {
+  flex: 1;
+}
+
+.master-card-cover-wrap {
+  flex-shrink: 0;
+  text-align: center;
+}
+
+.master-cover-img {
+  width: 220px;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6), 0 0 20px rgba(59, 130, 246, 0.3);
+  border: 1px solid rgba(59, 130, 246, 0.4);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.master-cover-img:hover {
+  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.7), 0 0 30px rgba(59, 130, 246, 0.5);
+}
+
+@media (max-width: 860px) {
+  .master-card-grid {
+    flex-direction: column-reverse;
+    text-align: left;
+  }
+  .master-cover-img {
+    width: 180px;
+  }
+}
+
 .master-card::before {
   content: "FEATURED SYNTHESIS";
   position: absolute;
