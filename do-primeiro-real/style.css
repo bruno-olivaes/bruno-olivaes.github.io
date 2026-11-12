@@ -1044,10 +1044,67 @@ body {
 
 
 /* ==========================================================================
-   EXTENSÕES: PLANO EMBAIXADOR, PATROCÍNIO, SUPREME MATH & TRANSPARÊNCIA
+   EXTENSÕES: OFERTA ÚNICA, LOTE FUNDADOR, PATROCÍNIO & SUPREME MATH
    ========================================================================== */
 
-/* GRID DUAL DE OFERTAS (R$ 14,90 vs R$ 97,00) */
+/* CONTAINER CENTRALIZADO OFERTA ÚNICA (R$ 14,90) */
+.pricing-single-wrap {
+  max-width: 560px;
+  margin: 2.5rem auto 0 auto;
+}
+
+/* PROGRESSO DO LOTE FUNDADOR */
+.founder-lot-card {
+  margin-top: 2rem;
+  background: rgba(14, 19, 30, 0.78);
+  border: 1px solid var(--emerald-border);
+  border-radius: var(--radius-md);
+  padding: 1.5rem 1.75rem;
+}
+
+.founder-lot-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.85rem;
+}
+
+.founder-lot-title {
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 0.98rem;
+}
+
+.founder-lot-target {
+  color: var(--emerald-light);
+  font-weight: 700;
+  font-size: 0.88rem;
+}
+
+.founder-lot-bar {
+  width: 100%;
+  height: 10px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-pill);
+  overflow: hidden;
+  margin-bottom: 0.75rem;
+}
+
+.founder-lot-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #059669 0%, #34d399 100%);
+  border-radius: var(--radius-pill);
+}
+
+.founder-lot-note {
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+/* GRID DUAL DE OFERTAS (FALLBACK) */
 .pricing-dual-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
