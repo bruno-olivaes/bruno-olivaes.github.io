@@ -56,7 +56,7 @@
                 </div>
 
                 <div class="hero-cta-group">
-                    <a href="https://pay.kiwify.com.br/JUmJDc2" target="_blank" class="cta-button pulse">
+                    <a href="https://pay.kiwify.com.br/JUmJDc2" target="_blank" rel="noopener" class="cta-button pulse" data-track="cta_hero" data-cta-pos="hero">
                         QUERO O LIVRO E APOIAR O JORNAL DA RUA ➔
                     </a>
                     <span class="cta-subtext">🔒 Pagamento único de R$ 14,90 • Acesso imediato no Kiwify • Garantia incondicional de 7 dias</span>
@@ -134,7 +134,7 @@
                     <div class="founder-lot-fill" style="width: 12%;"></div>
                 </div>
                 <p class="founder-lot-note">
-                    Em captação para a primeira impressão gráfica. Prestação de contas com comprovantes publicada no <a href="https://instagram.com/thevisaoinformacao" target="_blank" style="color: var(--emerald-light); text-decoration: underline;">@thevisaoinformacao</a> a cada tiragem.
+                    Em captação para a primeira impressão gráfica. Prestação de contas com comprovantes publicada no <a href="https://instagram.com/thevisaoinformacao" target="_blank" rel="noopener" data-track="ig_prestacao_contas" data-cta-pos="jornal_transparencia" style="color: var(--emerald-light); text-decoration: underline;">@thevisaoinformacao</a> a cada tiragem.
                 </p>
             </div>
         </div>
@@ -406,7 +406,7 @@
                 </div>
 
                 <div style="margin-top: 1.75rem;">
-                    <a href="https://instagram.com/thevisaoinformacao" target="_blank" class="cta-button" style="background: linear-gradient(135deg, #d4af37 0%, #aa841f 100%); color: #07090e; font-weight: 800;">
+                    <a href="https://instagram.com/thevisaoinformacao" target="_blank" rel="noopener" data-track="ig_apoio_local" data-cta-pos="patrocinio" class="cta-button" style="background: linear-gradient(135deg, #d4af37 0%, #aa841f 100%); color: #07090e; font-weight: 800;">
                         FALAR SOBRE APOIO LOCAL NO @THEVISAOINFORMACAO ➔
                     </a>
                     <span class="cta-subtext" style="display: block; margin-top: 0.75rem;">
@@ -577,7 +577,7 @@
                     </div>
 
                     <div>
-                        <a href="https://pay.kiwify.com.br/JUmJDc2" target="_blank" class="cta-button pulse" style="width: 100%; font-size: 1.05rem; padding: 1.15rem 1.5rem;">
+                        <a href="https://pay.kiwify.com.br/JUmJDc2" target="_blank" rel="noopener" data-track="cta_pricing" data-cta-pos="pricing" class="cta-button pulse" style="width: 100%; font-size: 1.05rem; padding: 1.15rem 1.5rem;">
                             QUERO O LIVRO E FINANCIAR 3 JORNAIS (R$ 14,90) ➔
                         </a>
                     </div>
@@ -656,17 +656,17 @@
     </section>
 
     <!-- FOOTER -->
-    <footer class="footer">
+    <footer class="footer" id="rodape">
         <div class="container">
             <p style="color: #ffffff; font-weight: 700; margin-bottom: 0.5rem;">TVIN — THE VISÃO INFORMAÇÃO • JORNAL REAL DA RUA</p>
             <p style="margin-bottom: 0.85rem; color: var(--text-main); font-size: 0.88rem;">
-                Quer apoiar estampando a marca do seu comércio local no rodapé do jornal impresso ou divulgar o livro como afiliado? Chame no Direct do <a href="https://instagram.com/thevisaoinformacao" target="_blank" style="color: var(--emerald-light); font-weight: 700;">@thevisaoinformacao</a>.
+                Quer apoiar estampando a marca do seu comércio local no rodapé do jornal impresso ou divulgar o livro como afiliado? Chame no Direct do <a href="https://instagram.com/thevisaoinformacao" target="_blank" rel="noopener" data-track="ig_footer_apoio" data-cta-pos="footer_apoio" style="color: var(--emerald-light); font-weight: 700;">@thevisaoinformacao</a>.
             </p>
             <p style="margin-bottom: 1rem;">
                 © 2026 Bruno Luçardo Olivaes. Todos os direitos reservados.
             </p>
             <p style="font-size: 0.8rem;">
-                Acompanhe o projeto no Instagram: <a href="https://instagram.com/thevisaoinformacao" target="_blank">@thevisaoinformacao</a>
+                Acompanhe o projeto no Instagram: <a href="https://instagram.com/thevisaoinformacao" target="_blank" rel="noopener" data-track="ig_footer_perfil" data-cta-pos="footer_perfil">@thevisaoinformacao</a>
             </p>
         </div>
     </footer>
@@ -677,12 +677,14 @@
             <span class="sticky-price">R$ 14,90</span>
             <span class="sticky-sub">Financia 3 Jornais</span>
         </div>
-        <a href="https://pay.kiwify.com.br/JUmJDc2" target="_blank" class="sticky-btn">
+        <a href="https://pay.kiwify.com.br/JUmJDc2" target="_blank" rel="noopener" data-track="cta_sticky_mobile" data-cta-pos="sticky_mobile" class="sticky-btn">
             QUERO O LIVRO ➔
         </a>
     </div>
 
-    <!-- SCRIPT INTERATIVIDADE -->
-    <script src="script.js"></script>
+    <!-- TELEMETRIA & INTERATIVIDADE -->
+    <script src="tracking-config.js"></script>
+    <script src="tracking.js" defer></script>
+    <script src="script.js" defer></script>
 </body>
 </html>
