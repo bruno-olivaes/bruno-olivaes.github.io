@@ -21,3 +21,4 @@ window.TVIN_TRACKING_CONFIG = {
     // Altere para true temporariamente apenas se quiser inspecionar eventos no Console (F12)
     debug: false
 };
+
