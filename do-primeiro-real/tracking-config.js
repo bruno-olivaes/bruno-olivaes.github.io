@@ -8,11 +8,11 @@ window.TVIN_TRACKING_CONFIG = {
     // Google Analytics 4 (ex.: 'G-ABC123DEF4')
     // Criar grátis em: https://analytics.google.com/ (Admin -> Fluxos de dados -> Web)
     // IMPORTANTE: cole este MESMO ID também na Kiwify (Produto -> Configurações -> Pixels de Conversão -> Google Analytics)
-    ga4MeasurementId: '',
+    ga4MeasurementId: 'G-0S7SRL4H71',
 
     // Microsoft Clarity (ex.: 'o1p2q3r4s5')
     // Criar grátis em: https://clarity.ms/ (Mapas de calor de cliques, rolagem e gravações de tela)
-    clarityProjectId: '',
+    clarityProjectId: 'zcsx032n9x',
 
     // Meta Pixel / Instagram & Facebook Ads (ex.: '123456789012345') — opcional futuro
     // Use o mesmo ID na Kiwify caso passe a impulsionar posts ou rodar tráfego pago
