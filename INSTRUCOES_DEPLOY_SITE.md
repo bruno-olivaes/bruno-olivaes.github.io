@@ -28,7 +28,7 @@ Caso o GitHub não inicie o build automaticamente, siga estes passos simples:
 
 ## 🌟 O que o Site Contém
 - **Página Inicial Acadêmica:** Design escuro, moderno, responsivo e de alta legibilidade.
-- **Monografia Master em Destaque:** Acesso direto ao livro de 34 páginas (*The Matrioska Protocol*).
+- **Monografia Master em Destaque:** Acesso direto ao livro de 45 páginas (*The Matrioska Protocol*).
 - **Cards dos 7 Artigos:** Título, resumo, DOIs do CERN/Zenodo, links para o código no GitHub e PDFs para leitura imediata no navegador.
 - **Protocolo de 5 Portões de Integridade:** Explicação visual do método anti-alucinação.
 - **Canais de Contato:** E-mail direto, ORCID, GitHub e perfil no Academia.edu.
