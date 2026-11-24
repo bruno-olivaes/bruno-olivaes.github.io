@@ -497,10 +497,10 @@
             <h3 class="paper-title">When Harmonic ZNE Fails: A Comparative Benchmark of Error Mitigation on NISQ Devices</h3>
             <div class="paper-authors">Bruno Luçardo Olivaes (2026)</div>
             <p class="paper-summary">
-              A controlled ablation benchmark executed via high-fidelity Qiskit 2.x (<code>AerSimulator</code>) emulations parameterized by heavy-hex superconducting transmon noise models under strictly matched shot budgets (N<sub>total</sub> = 24,000 shots/seed). Harmonic ZNE reduces MAE by 85.4% in 1-qubit coherent Ramsey sequences (z = +22.1 SE), but suffers catastrophic overfitting in 4-qubit entangled TFIM Trotter circuits (MAE = 2.28 at &epsilon; = 0.04 rad), where two-qubit Clifford Pauli Twirling + Linear/Exponential ZNE restores monotonic decay and achieves 80.8%&ndash;81.0% error reduction.
+              A controlled equal-shot-budget and out-of-family noise audit executed via Qiskit 2.x (<code>AerSimulator</code>) heavy-hex superconducting transmon emulations (N<sub>total</sub> = 24,000&ndash;32,768 shots/seed) comparing Equal-Budget Unmitigated, Twirl-Only, Local Linear, Polynomial, Exponential, Forced Harmonic, and stability-gated <code>Auto_LombScargle_ZNE</code>. Harmonic ZNE cuts MAE by 82.6% in deep 1-qubit coherent Ramsey drift (MAE = 0.0084 vs. 0.0482 equal-budget unmitigated, z = +31.74 SE), but suffers 100% optimizer instability in short-scale, monotonic amplitude+depolarizing, bi-chromatic Gaussian 1/<i>f</i> drift, and 4-qubit TFIM circuits (MAE = 2.2868 at &epsilon; = 0.04 rad), where stability-gating safely falls back to local linear and Clifford Pauli Twirling + ZNE achieves 75.2%&ndash;86.8% error reduction (persisting under noisy Pauli frame gates).
             </p>
             <div class="paper-metrics">
-              <strong>Platform:</strong> Qiskit 2.x AerSimulator (Heavy-Hex Transmon Models) &middot; 85.4% 1Q / 80.8%&ndash;81.0% 4Q Error Reduction.
+              <strong>Platform:</strong> Qiskit 2.x AerSimulator (Heavy-Hex + Noisy-Frame &amp; Out-of-Family Audit) &middot; 82.6% 1Q / 75.2%&ndash;86.8% 4Q Reduction &middot; CI Verified.
             </div>
           </div>
           <div class="paper-actions">
